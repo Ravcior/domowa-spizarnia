@@ -1,0 +1,22 @@
+.listBox {
+   max-width: 610px;
+   height: 100%;
+   overflow-y: scroll;
+   padding-right: 5px;
+   margin: 30px auto 0 auto;
+
+   &::-webkit-scrollbar {
+      width: 3px;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: #4e5d6a;
+      outline: 1px solid slategrey;
+   }
+}
+
+.addBtn {
+   position: absolute;
+   left: calc(50% - 150px);
+   bottom: 0;
+}

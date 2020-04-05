@@ -1,0 +1,41 @@
+.row {
+   position: relative;
+   max-width: 600px;
+   width: 100%;
+   height: 60px;
+   background: #4e5d6a;
+   margin: 0 auto 15px auto;
+   border-radius: 8px;
+
+   .img,
+   .name,
+   .state {
+      font-weight: 700;
+      height: 60px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .img {
+      width: 60px;
+
+      img {
+         height: 30px;
+         width: 30px;
+      }
+   }
+
+   .name {
+      width: auto;
+      left: 70px;
+      top: 0;
+   }
+
+   .state {
+      right: 0;
+      top: 0;
+      width: 60px;
+   }
+}

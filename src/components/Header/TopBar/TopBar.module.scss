@@ -1,0 +1,42 @@
+.wrapper {
+   background: #4e5d6a;
+}
+.header {
+   font-size: 3rem;
+   font-weight: 700;
+   color: #7bed8d;
+   height: 90px;
+   padding: 0 15px;
+   margin: auto;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @media (min-width: 768px) {
+      max-width: 630px;
+      padding: 0 2px 0 10px;
+   }
+
+   @media (min-width: 1170px) {
+      max-width: 980px;
+   }
+}
+a {
+   :first-child {
+      display: block;
+   }
+
+   :last-child {
+      display: none;
+   }
+}
+
+.selected {
+   :first-child {
+      display: none;
+   }
+   :last-child {
+      display: block;
+   }
+}

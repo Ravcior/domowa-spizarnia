@@ -1,0 +1,51 @@
+.navBar {
+   background: #404e5a;
+   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1);
+   @media (hover: none) and (pointer: coarse) {
+      overflow-x: scroll;
+   }
+   display: flex;
+}
+
+ul.menu {
+   margin: 0 auto;
+   padding: 2px 15px;
+   list-style: none;
+   min-height: 72px;
+   font-weight: 600;
+
+   @media (hover: hover) and (pointer: fine) {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+
+   @media (hover: hover) and (pointer: fine) and (min-width: 768px) {
+      max-width: 630px;
+   }
+
+   @media (hover: hover) and (pointer: fine) and (min-width: 1170px) {
+      max-width: 980px;
+   }
+
+   display: flex;
+   align-items: center;
+}
+
+li.menu_item {
+   margin: 3px 5px;
+   cursor: pointer;
+
+   a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 52px;
+      padding: 0 15px;
+   }
+
+   &:hover {
+      color: #fff;
+      background: #7bed8d;
+      border-radius: 52px;
+   }
+}

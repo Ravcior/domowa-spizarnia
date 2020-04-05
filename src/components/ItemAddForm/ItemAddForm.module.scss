@@ -1,0 +1,89 @@
+.wrapper {
+   background: rgba(0, 0, 0, 0.3);
+   position: fixed;
+   top: 0;
+   z-index: 999;
+   width: 100vw;
+   height: 100vh;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.modal {
+   position: relative;
+   width: 300px;
+   min-height: 300px;
+   padding: 30px;
+   background: #4e5d6a;
+   box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.1);
+   z-index: 999;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.closeModal {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+}
+
+.closingBtn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+
+   cursor: pointer;
+}
+
+.addForm {
+   width: 100%;
+   input,
+   select {
+      color: #748a9d;
+      font-weight: 700;
+      width: 100%;
+      height: 45px;
+      background: #404e5a;
+      border: none;
+      outline: none;
+      padding: 5px 15px;
+      border-radius: 8px;
+
+      margin-bottom: 20px;
+
+      &:first-child {
+         margin-top: 30px;
+      }
+
+      &::placeholder {
+         color: #748a9d;
+         font-weight: 700;
+      }
+   }
+
+   input[type='number']::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+   }
+
+   .addBtn {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      height: 45px;
+      width: 100%;
+      border-radius: 60px;
+      background: #7bed8d;
+      margin: 10px auto 0 auto;
+      border: none;
+
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}

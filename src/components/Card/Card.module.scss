@@ -1,0 +1,133 @@
+.card {
+   width: 90px;
+   height: 120px;
+
+   position: relative;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+
+   @media (min-width: 768px) {
+      width: 90px;
+   }
+
+   @media (min-width: 1170px) {
+      width: 85px;
+   }
+
+   &:hover {
+      .removeIcon {
+         opacity: 1;
+      }
+
+      .editIcon {
+         opacity: 1;
+      }
+   }
+
+   .img {
+      height: 50px;
+      display: flex;
+      justify-content: center;
+   }
+
+   .removeIcon {
+      @media (hover: hover) and (pointer: fine) {
+         opacity: 0;
+      }
+      transition: 0.2s;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+
+      cursor: pointer;
+
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+         margin-top: 3px;
+      }
+   }
+
+   .editIcon {
+      @media (hover: hover) and (pointer: fine) {
+         opacity: 0;
+      }
+      transition: 0.2s;
+      width: 16px;
+      height: 16px;
+      border-radius: 16px;
+
+      cursor: pointer;
+
+      position: absolute;
+      right: 0;
+      top: 25px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+         width: 16px;
+         height: 16px;
+
+         margin-top: 3px;
+      }
+   }
+
+   .productIcon {
+      max-width: 50px;
+      max-height: 50px;
+   }
+
+   .name {
+      font-size: 1.4rem;
+      font-weight: 700;
+   }
+
+   .counter {
+      width: 100%;
+      height: 35px;
+      background: #4e5d6a;
+      border-radius: 8px;
+      position: relative;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .substraction,
+      .addition {
+         width: 35px;
+         height: 35px;
+         position: absolute;
+         background: transparent;
+         border: none;
+         outline: none;
+
+         z-index: 100;
+         cursor: pointer;
+
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .substraction {
+         left: 0;
+      }
+
+      .addition {
+         right: 0;
+      }
+   }
+}
